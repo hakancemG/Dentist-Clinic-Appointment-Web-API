@@ -42,11 +42,11 @@ Patient Ekle --> POST .../api/patients/create
   "email": "ahmetyilmaz@example.com",
   "phone": "5551234567"
 }
-```
+```json
 
 Patient Güncelle --> PUT .../api/patients
 
-```
+```json
 {
   "id": "1",
   "firstName": "Ayşe",
@@ -66,7 +66,7 @@ Full Patient Görüntüle --> GET .../api/patients/full
 Patient Sil --> DELETE .../api/patients/delete/1
 
 Dişçi Ekle --> POST .../api/dentists/create
-```
+```json
 {
     "dentistFirstName":"Kadir",
     "dentistLastName":"Kıymet",
@@ -76,7 +76,7 @@ Dişçi Ekle --> POST .../api/dentists/create
 ```
 
 Dişçi Güncelle -> PUT .../api/dentists
-```
+```json
 {
     "id":"1",
     "dentistFirstName":"Selma",
