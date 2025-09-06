@@ -32,7 +32,7 @@ Database konfigürasyonu :
 ___________________________________________________________________________________
 + Test için gerekli end pointler ve JSON verileri (Postman):
 
-Patient Ekle -> POST http://localhost:8080/api/patients/create
+Patient Ekle -> POSThttp://localhost:8080/api/patients/create
 
 ```
 {
@@ -44,7 +44,7 @@ Patient Ekle -> POST http://localhost:8080/api/patients/create
 }
 ```
 
-Patient Güncelle -> PUT http://localhost:8080/api/patients
+Patient Güncelle -> PUThttp://localhost:8080/api/patients
 ```
 {
   "id": "1",
@@ -56,15 +56,15 @@ Patient Güncelle -> PUT http://localhost:8080/api/patients
 }
 ```
 
-Patient Görüntüle -> GET http://localhost:8080/api/patients/1
+Patient Görüntüle -> GEThttp://localhost:8080/api/patients/1
 
-Limited Patient Görüntüle -> GET http://localhost:8080/api/patients/limited
+Limited Patient Görüntüle -> GEThttp://localhost:8080/api/patients/limited
 
-Full Patient Görüntüle -> GET http://localhost:8080/api/patients/full
+Full Patient Görüntüle -> GEThttp://localhost:8080/api/patients/full
 
-Patient Sil -> DELETE http://localhost:8080/api/patients/delete/1
+Patient Sil -> DELETEhttp://localhost:8080/api/patients/delete/1
 
-Dişçi Ekle -> POST http://localhost:8080/api/dentists/create
+Dişçi Ekle -> POSThttp://localhost:8080/api/dentists/create
 ```
 {
     "dentistFirstName":"Kadir",
@@ -74,7 +74,7 @@ Dişçi Ekle -> POST http://localhost:8080/api/dentists/create
 }
 ```
 
-Dişçi Güncelle -> PUT -> http://localhost:8080/api/dentists
+Dişçi Güncelle -> PUThttp://localhost:8080/api/dentists
 ```
 {
     "id":"1",
@@ -85,13 +85,13 @@ Dişçi Güncelle -> PUT -> http://localhost:8080/api/dentists
 }
 ```
 
-Dişçi Görüntüle -> GET http://localhost:8080/api/dentists/1
+Dişçi Görüntüle -> GEThttp://localhost:8080/api/dentists/1
 
-Limited Dişçi Görüntüle -> GET http://localhost:8080/api/dentists/limited
+Limited Dişçi Görüntüle -> GEThttp://localhost:8080/api/dentists/limited
 
-Dişçi Sil -> DELETE http://localhost:8080/api/dentists/delete/1
+Dişçi Sil -> DELETEhttp://localhost:8080/api/dentists/delete/1
 
-Randevu Ekle -> POST http://localhost:8080/api/appointments/create
+Randevu Ekle -> POSThttp://localhost:8080/api/appointments/create
 ```
 {
     "appointmentDate": "2025-11-11",
@@ -101,7 +101,7 @@ Randevu Ekle -> POST http://localhost:8080/api/appointments/create
 }
 ```
 
-Randevu Güncelle -> PUT http://localhost:8080/api/appointments
+Randevu Güncelle -> PUThttp://localhost:8080/api/appointments
 ```
 {
     "id":1,
@@ -112,13 +112,13 @@ Randevu Güncelle -> PUT http://localhost:8080/api/appointments
 }
 ```
 
-Randevu Görüntüle -> GET http://localhost:8080/api/appointments/1
+Randevu Görüntüle -> GEThttp://localhost:8080/api/appointments/1
 
-Tarih ve Dişçiye Göre Randevu Görüntüle -> GET http://localhost:8080/api/appointments/by-date-and-dentist?appointmentDate=2025-11-11&dentistId=1
+Tarih ve Dişçiye GöreRandevu Görüntüle -> GET http://localhost:8080/api/appointments/by-date-and-dentist?appointmentDate=2025-11-11&dentistId=1
 
-Randevu Sil -> DELETE http://localhost:8080/api/appointments/delete/1
+Randevu Sil -> DELETEhttp://localhost:8080/api/appointments/delete/1
 
-Tedavi Geçmişi Ekle -> POST http://localhost:8080/api/medical-histories/create
+Tedavi Geçmişi Ekle -> POSThttp://localhost:8080/api/medical-histories/create
 ```
 {
     "patientId":1,
@@ -130,7 +130,7 @@ Tedavi Geçmişi Ekle -> POST http://localhost:8080/api/medical-histories/create
 }
 ```
 
-Tedavi Geçmişi Güncelle -> POST http://localhost:8080/api/medical-histories
+Tedavi Geçmişi Güncelle -> POSThttp://localhost:8080/api/medical-histories
 ```
 {
     "id":1,
@@ -143,13 +143,13 @@ Tedavi Geçmişi Güncelle -> POST http://localhost:8080/api/medical-histories
 }
 ```
 
-Tedavi Geçmişi Görüntüle -> GET http://localhost:8080/api/medical-histories/1
+Tedavi Geçmişi Görüntüle -> GEThttp://localhost:8080/api/medical-histories/1
 
-Hastaya Göre Tedavi Geçmişi Görüntüle -> GET http://localhost:8080/api/medical-histories/by-patient/1
+Hastaya Göre Tedavi Geçmişi Görüntüle -> GEThttp://localhost:8080/api/medical-histories/by-patient/1
 
-Tedavi Geçmişini Sil -> DELETE http://localhost:8080/api/medical-histories/delete/1
+Tedavi Geçmişini Sil -> DELETEhttp://localhost:8080/api/medical-histories/delete/1
 
-Müsaitlik Durumu Ekle -> POST http://localhost:8080/api/availabilities/create
+Müsaitlik Durumu Ekle -> POSThttp://localhost:8080/api/availabilities/create
 ```
 {
     "availabilityDate":"2027-11-11",
@@ -160,7 +160,7 @@ Müsaitlik Durumu Ekle -> POST http://localhost:8080/api/availabilities/create
 }
 ```
 
-Müsaitlik Durumu Güncelle -> PUT http://localhost:8080/api/availabilities/update
+Müsaitlik Durumu Güncelle -> PUThttp://localhost:8080/api/availabilities/update
 ```
 {
     "id":1,
@@ -172,10 +172,10 @@ Müsaitlik Durumu Güncelle -> PUT http://localhost:8080/api/availabilities/upda
 }
 ```
 
-Müsaitlik Durumu Güncelle -> GET http://localhost:8080/api/availabilities/1
+Müsaitlik Durumu Güncelle -> GEThttp://localhost:8080/api/availabilities/1
 ______________________________________________________________________________________________________________________________________________________________________
 iletişim: hakancg05@gmail.com
 
-Dişçiye Göre Müsaitlik Durumu Güncelle -> GET http://localhost:8080/api/availabilities/dentist/1/availabilityDate/2027-11-11
+Dişçiye Göre Müsaitlik Durumu Güncelle -> GEThttp://localhost:8080/api/availabilities/dentist/1/availabilityDate/2027-11-11
 
-Müsaitlik Durumu Sil -> http://localhost:8080/api/availabilities/delete/1
+Müsaitlik Durumu Sil -> DELETEhttp://localhost:8080/api/availabilities/delete/1
