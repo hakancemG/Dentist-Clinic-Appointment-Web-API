@@ -75,7 +75,7 @@ Dişçi Ekle --> POST .../api/dentists/create
 }
 ```
 
-Dişçi Güncelle -> PUThttp://localhost:8080/api/dentists
+Dişçi Güncelle -> PUT .../api/dentists
 ```
 {
     "id":"1",
@@ -86,13 +86,13 @@ Dişçi Güncelle -> PUThttp://localhost:8080/api/dentists
 }
 ```
 
-Dişçi Görüntüle -> GEThttp://localhost:8080/api/dentists/1
+Dişçi Görüntüle -> GET .../api/dentists/1
 
-Limited Dişçi Görüntüle -> GEThttp://localhost:8080/api/dentists/limited
+Limited Dişçi Görüntüle -> GET .../api/dentists/limited
 
-Dişçi Sil -> DELETEhttp://localhost:8080/api/dentists/delete/1
+Dişçi Sil -> DELETE .../api/dentists/delete/1
 
-Randevu Ekle -> POSThttp://localhost:8080/api/appointments/create
+Randevu Ekle -> POST .../api/appointments/create
 ```
 {
     "appointmentDate": "2025-11-11",
@@ -102,7 +102,7 @@ Randevu Ekle -> POSThttp://localhost:8080/api/appointments/create
 }
 ```
 
-Randevu Güncelle -> PUThttp://localhost:8080/api/appointments
+Randevu Güncelle -> PUT .../api/appointments
 ```
 {
     "id":1,
@@ -119,7 +119,7 @@ Tarih ve Dişçiye GöreRandevu Görüntüle -> GET .../api/appointments/by-date
 
 Randevu Sil -> DELETE .../api/appointments/delete/1
 
-Tedavi Geçmişi Ekle -> POSThttp://localhost:8080/api/medical-histories/create
+Tedavi Geçmişi Ekle -> POST .../api/medical-histories/create
 ```
 {
     "patientId":1,
@@ -174,9 +174,9 @@ Müsaitlik Durumu Güncelle -> PUT .../api/availabilities/update
 ```
 
 Müsaitlik Durumu Güncelle -> GET .../api/availabilities/1
+
+Dişçiye Göre Müsaitlik Durumu Güncelle -> GET .../api/availabilities/dentist/1/availabilityDate/2027-11-11
+
+Müsaitlik Durumu Sil -> DELETE .../api/availabilities/delete/1
 ______________________________________________________________________________________________________________________________________________________________________
 iletişim: hakancg05@gmail.com
-
-Dişçiye Göre Müsaitlik Durumu Güncelle -> GEThttp://localhost:8080/api/availabilities/dentist/1/availabilityDate/2027-11-11
-
-Müsaitlik Durumu Sil -> DELETEhttp://localhost:8080/api/availabilities/delete/1
