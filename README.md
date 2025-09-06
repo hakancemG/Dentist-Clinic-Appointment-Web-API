@@ -34,7 +34,7 @@ ________________________________________________________________________________
 
 Patient Ekle --> POST .../api/patients/create
 
-```
+```json
 {
   "firstName": "Ahmet",
   "lastName": "Yılmaz",
