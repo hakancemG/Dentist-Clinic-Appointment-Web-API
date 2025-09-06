@@ -45,6 +45,7 @@ Patient Ekle --> POST .../api/patients/create
 ```
 
 Patient Güncelle --> PUT .../api/patients
+
 ```
 {
   "id": "1",
@@ -112,11 +113,11 @@ Randevu Güncelle -> PUThttp://localhost:8080/api/appointments
 }
 ```
 
-Randevu Görüntüle -> GEThttp://localhost:8080/api/appointments/1
+Randevu Görüntüle -> GET .../api/appointments/1
 
-Tarih ve Dişçiye GöreRandevu Görüntüle -> GET http://localhost:8080/api/appointments/by-date-and-dentist?appointmentDate=2025-11-11&dentistId=1
+Tarih ve Dişçiye GöreRandevu Görüntüle -> GET .../api/appointments/by-date-and-dentist?appointmentDate=2025-11-11&dentistId=1
 
-Randevu Sil -> DELETEhttp://localhost:8080/api/appointments/delete/1
+Randevu Sil -> DELETE .../api/appointments/delete/1
 
 Tedavi Geçmişi Ekle -> POSThttp://localhost:8080/api/medical-histories/create
 ```
@@ -130,7 +131,7 @@ Tedavi Geçmişi Ekle -> POSThttp://localhost:8080/api/medical-histories/create
 }
 ```
 
-Tedavi Geçmişi Güncelle -> POSThttp://localhost:8080/api/medical-histories
+Tedavi Geçmişi Güncelle -> POST .../api/medical-histories
 ```
 {
     "id":1,
@@ -143,13 +144,13 @@ Tedavi Geçmişi Güncelle -> POSThttp://localhost:8080/api/medical-histories
 }
 ```
 
-Tedavi Geçmişi Görüntüle -> GEThttp://localhost:8080/api/medical-histories/1
+Tedavi Geçmişi Görüntüle -> GET .../api/medical-histories/1
 
-Hastaya Göre Tedavi Geçmişi Görüntüle -> GEThttp://localhost:8080/api/medical-histories/by-patient/1
+Hastaya Göre Tedavi Geçmişi Görüntüle -> GET .../api/medical-histories/by-patient/1
 
-Tedavi Geçmişini Sil -> DELETEhttp://localhost:8080/api/medical-histories/delete/1
+Tedavi Geçmişini Sil -> DELETE .../api/medical-histories/delete/1
 
-Müsaitlik Durumu Ekle -> POSThttp://localhost:8080/api/availabilities/create
+Müsaitlik Durumu Ekle -> POST .../api/availabilities/create
 ```
 {
     "availabilityDate":"2027-11-11",
@@ -160,7 +161,7 @@ Müsaitlik Durumu Ekle -> POSThttp://localhost:8080/api/availabilities/create
 }
 ```
 
-Müsaitlik Durumu Güncelle -> PUThttp://localhost:8080/api/availabilities/update
+Müsaitlik Durumu Güncelle -> PUT .../api/availabilities/update
 ```
 {
     "id":1,
@@ -172,7 +173,7 @@ Müsaitlik Durumu Güncelle -> PUThttp://localhost:8080/api/availabilities/updat
 }
 ```
 
-Müsaitlik Durumu Güncelle -> GEThttp://localhost:8080/api/availabilities/1
+Müsaitlik Durumu Güncelle -> GET .../api/availabilities/1
 ______________________________________________________________________________________________________________________________________________________________________
 iletişim: hakancg05@gmail.com
 
