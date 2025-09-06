@@ -42,7 +42,7 @@ Patient Ekle --> POST .../api/patients/create
   "email": "ahmetyilmaz@example.com",
   "phone": "5551234567"
 }
-```json
+```
 
 Patient Güncelle --> PUT .../api/patients
 
@@ -93,7 +93,7 @@ Limited Dişçi Görüntüle -> GET .../api/dentists/limited
 Dişçi Sil -> DELETE .../api/dentists/delete/1
 
 Randevu Ekle -> POST .../api/appointments/create
-```
+```json
 {
     "appointmentDate": "2025-11-11",
     "appointmentStatus": "COMPLETED",
@@ -103,7 +103,7 @@ Randevu Ekle -> POST .../api/appointments/create
 ```
 
 Randevu Güncelle -> PUT .../api/appointments
-```
+```json
 {
     "id":1,
     "appointmentDate": "2027-11-11",
@@ -120,7 +120,7 @@ Tarih ve Dişçiye GöreRandevu Görüntüle -> GET .../api/appointments/by-date
 Randevu Sil -> DELETE .../api/appointments/delete/1
 
 Tedavi Geçmişi Ekle -> POST .../api/medical-histories/create
-```
+```json
 {
     "patientId":1,
     "dentistId":1,
@@ -132,7 +132,7 @@ Tedavi Geçmişi Ekle -> POST .../api/medical-histories/create
 ```
 
 Tedavi Geçmişi Güncelle -> POST .../api/medical-histories
-```
+```json
 {
     "id":1,
     "patientId":1,
@@ -151,7 +151,7 @@ Hastaya Göre Tedavi Geçmişi Görüntüle -> GET .../api/medical-histories/by-
 Tedavi Geçmişini Sil -> DELETE .../api/medical-histories/delete/1
 
 Müsaitlik Durumu Ekle -> POST .../api/availabilities/create
-```
+```json
 {
     "availabilityDate":"2027-11-11",
     "startTime": "14:30:45",
@@ -162,7 +162,7 @@ Müsaitlik Durumu Ekle -> POST .../api/availabilities/create
 ```
 
 Müsaitlik Durumu Güncelle -> PUT .../api/availabilities/update
-```
+```json
 {
     "id":1,
     "availabilityDate":"2027-11-11",
