@@ -32,7 +32,7 @@ Database konfigürasyonu :
 ___________________________________________________________________________________
 + Test için gerekli end pointler ve JSON verileri (Postman):
 
-Patient Ekle -> POSThttp://localhost:8080/api/patients/create
+Patient Ekle --> POST .../api/patients/create
 
 ```
 {
@@ -44,7 +44,7 @@ Patient Ekle -> POSThttp://localhost:8080/api/patients/create
 }
 ```
 
-Patient Güncelle -> PUThttp://localhost:8080/api/patients
+Patient Güncelle --> PUT .../api/patients
 ```
 {
   "id": "1",
@@ -56,15 +56,15 @@ Patient Güncelle -> PUThttp://localhost:8080/api/patients
 }
 ```
 
-Patient Görüntüle -> GEThttp://localhost:8080/api/patients/1
+Patient Görüntüle --> GET .../api/patients/1
 
-Limited Patient Görüntüle -> GEThttp://localhost:8080/api/patients/limited
+Limited Patient Görüntüle --> GET .../api/patients/limited
 
-Full Patient Görüntüle -> GEThttp://localhost:8080/api/patients/full
+Full Patient Görüntüle --> GET .../api/patients/full
 
-Patient Sil -> DELETEhttp://localhost:8080/api/patients/delete/1
+Patient Sil --> DELETE .../api/patients/delete/1
 
-Dişçi Ekle -> POSThttp://localhost:8080/api/dentists/create
+Dişçi Ekle --> POST .../api/dentists/create
 ```
 {
     "dentistFirstName":"Kadir",
